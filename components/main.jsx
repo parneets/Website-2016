@@ -10,13 +10,13 @@ import {SideNav} from './sideNav.jsx';
 import './../less/main.less'
 
 class Main extends React.Component {
-  
+
     render() {
         return (
             <div className="main-div">
-                
-                <SideNav docked={false} />
-                
+
+                <SideNav docked={true} />
+
                 <RaisedButton label="Default" />
             </div>
         );
