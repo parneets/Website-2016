@@ -11,7 +11,7 @@ class SideNav extends React.Component {
         super(props);
         this.state = {open: false};
     }
-    
+
     handleToggle = () => {
         this.setState({open: !this.state.open});
     }
@@ -19,7 +19,7 @@ class SideNav extends React.Component {
     handleClose = () => {
         this.setState({open: false});
     }
-    
+
     render() {
         return (
             <div>
@@ -28,7 +28,7 @@ class SideNav extends React.Component {
                     onTouchTap={this.handleToggle}
                 />
                 <LeftNav
-                    docked={this.props.docked}
+                    docked={false}
                     width={200}
                     open={this.state.open}
                     onRequestChange={open => this.setState({open})}

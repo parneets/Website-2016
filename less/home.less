@@ -1,0 +1,60 @@
+@import "./colors.less";
+
+@desktop:   ~"only screen and (min-width: 960px) and (max-width: 1199px)";
+@tablet:    ~"only screen and (min-width: 720px) and (max-width: 959px)";
+@phone:    ~"screen and (max-width: 720px)";
+
+.home-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.home-pic {
+    height: 100%;
+    width: 100%;
+}
+
+.home-heading {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 40%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font-size: 5em;
+}
+
+.home-quote {
+    &:extend(.home-heading);
+    top: 55%;
+    width: 100%;
+    font-size: 2em;
+    color: @color-primary700;
+}
+
+@media @desktop {
+    .home-quote {
+        top: 50%;
+    }
+}
+
+@media @tablet {
+    .home-heading{
+        font-size: 3em;
+    }
+    .home-quote {
+        font-size: 1.5em;
+        top: 50%;
+    }
+}
+@media @phone {
+    .home-heading{
+        font-size: 2em;
+    }
+    .home-quote {
+        font-size: 1em;
+        top: 47%;
+    }
+}

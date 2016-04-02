@@ -18,6 +18,14 @@ module.exports = {
       		test: /\.less$/,
             loader: 'style!css!less'
         },
-    ]
+        {
+      		test: /\.css/,
+            loader: 'style!css!less'
+        },
+        {
+            test: /\.(jpe?g|png|gif|svg)$/i,
+            loader: 'file-loader'
+        },
+    ],
   },
 };
