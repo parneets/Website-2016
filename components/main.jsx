@@ -10,6 +10,8 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 injectTapEventPlugin();
 
 import {Home} from './home.jsx';
+import {About} from './about.jsx';
+import {Projects} from './projects.jsx';
 
 import './../less/main.less'
 
@@ -38,6 +40,8 @@ ReactDOM.render((
   <Router history={hashHistory}>
     <Route path="/" component={Main}>
       <IndexRoute component={Home} />
+      <Route path="about" component={About} />
+      <Route path="projects" component={Projects} />
     </Route>
   </Router>
 ), document.getElementById('content'));

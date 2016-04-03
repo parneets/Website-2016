@@ -6,9 +6,9 @@ import {Footer} from './footer.jsx'
 import {Card} from './card.jsx'
 
 import './../less/main.less'
-import './../less/about.less'
+import './../less/projects.less'
 
-class About extends React.Component {
+class Projects extends React.Component {
     render() {
         return (
             <div className="expand-full">
@@ -26,14 +26,6 @@ class About extends React.Component {
                         <p className="card-heading">Yoga</p>
                     </Card>
 
-                    <Card>
-                        <p className="card-heading">Travelling</p>
-                    </Card>
-
-                    <Card>
-                        <p className="card-heading">National Servive Scheme</p>
-                    </Card>
-
                 </div>
 
                 <Footer isHome={false} />
@@ -44,5 +36,5 @@ class About extends React.Component {
 }
 
 export {
-    About
+    Projects
 }

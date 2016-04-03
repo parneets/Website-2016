@@ -1,9 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import { Router, Route, IndexRoute, Link, hashHistory } from 'react-router';
+
 import RaisedButton from 'material-ui/lib/raised-button';
+import FlatButton from 'material-ui/lib/flat-button';
 import LeftNav from 'material-ui/lib/left-nav';
 import MenuItem from 'material-ui/lib/menus/menu-item';
+import Paper from 'material-ui/lib/paper';
+
+import {Footer} from './footer.jsx'
 
 import './../less/main.less'
 import './../less/home.less'
@@ -21,40 +27,72 @@ class Home extends React.Component {
 
     render() {
 
+        const navStyle = {
+            textAlign: 'center',
+        }
+
         const buttonStyle = {
             position: 'absolute',
-            width: '40px',
+            width: '50px',
             top: '65%',
             left: '0px',
             right: '0px',
             margin: '0 auto',
         };
 
+        const menuStyle = {
+            textAlign: 'center'
+        }
+
+        const picStyle = {
+            height: 150,
+            width: 150,
+            margin: 20,
+            textAlign: 'center',
+            display: 'inline-block',
+            overflow: 'hidden'
+        };
+
         return (
+                <div className="home-container">
 
-            <div className="home-container">
+                    <LeftNav
+                        style={navStyle}
+                        docked={false}
+                        width={230}
+                        open={this.state.open}
+                        onRequestChange={open => this.setState({open})}
+                    >
 
-                <LeftNav
-                    docked={false}
-                    width={200}
-                    open={this.state.open}
-                    onRequestChange={open => this.setState({open})}
-                >
-                    <MenuItem onTouchTap={this.handleClose}>Menu Item</MenuItem>
-                    <MenuItem onTouchTap={this.handleClose}>Menu Item 2</MenuItem>
-                </LeftNav>
+                        <Paper style={picStyle} zDepth={2} circle={true}>
+                            <img className="nav-pic" src="./../pics/parneet1.jpg" />
+                        </Paper>
 
-                <img
-                    src="./pics/triangle.png"
-                    className="home-pic"/>
+                        <Link to="/">
+                            <MenuItem style={menuStyle} onTouchTap={this.handleClose}>Home</MenuItem>
+                        </Link>
+                        <Link to="/about">
+                            <MenuItem style={menuStyle} onTouchTap={this.handleClose}>About Me</MenuItem>
+                        </Link>
+                        <Link to="/projects">
+                            <MenuItem style={menuStyle} onTouchTap={this.handleClose}>Projects</MenuItem>
+                        </Link>
 
-                <span className="home-heading">Parneet Singh</span>
-                <span className="home-quote">Converting caffiene to code since 2013</span>
+                    </LeftNav>
 
-                <RaisedButton label="Explore" primary={true} style={buttonStyle}
-                        onTouchTap={this.handleToggle}/>
+                    <img
+                        src="./pics/triangle.png"
+                        className="home-pic"/>
 
-            </div>
+                    <span className="home-heading">Parneet Singh</span>
+                    <span className="home-quote">Converting caffiene into code since 2013</span>
+
+                    <RaisedButton label="Explore" primary={true} style={buttonStyle}
+                            onTouchTap={this.handleToggle}/>
+
+                    <Footer isHome={true} />
+
+                </div>
         );
     }
 }
