@@ -8,6 +8,7 @@ import FlatButton from 'material-ui/lib/flat-button';
 import LeftNav from 'material-ui/lib/left-nav';
 import MenuItem from 'material-ui/lib/menus/menu-item';
 import Paper from 'material-ui/lib/paper';
+import Divider from 'material-ui/lib/divider';
 
 import {Footer} from './footer.jsx'
 
@@ -41,7 +42,8 @@ class Home extends React.Component {
         };
 
         const menuStyle = {
-            textAlign: 'center'
+            textAlign: 'center',
+            fontSize: '1.1em'
         }
 
         const picStyle = {
@@ -68,6 +70,8 @@ class Home extends React.Component {
                             <img className="nav-pic" src="./../pics/parneet1.jpg" />
                         </Paper>
 
+                        <Divider />
+
                         <Link to="/">
                             <MenuItem style={menuStyle} onTouchTap={this.handleClose}>Home</MenuItem>
                         </Link>
@@ -76,6 +80,9 @@ class Home extends React.Component {
                         </Link>
                         <Link to="/projects">
                             <MenuItem style={menuStyle} onTouchTap={this.handleClose}>Projects</MenuItem>
+                        </Link>
+                        <Link to="/experience">
+                            <MenuItem style={menuStyle} onTouchTap={this.handleClose}>Experience</MenuItem>
                         </Link>
 
                     </LeftNav>

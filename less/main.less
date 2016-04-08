@@ -1,6 +1,6 @@
 @import "./colors.less";
 
-@phone:    ~"screen and (max-width: 720px)";
+@phone:    ~"screen and (max-width: 820px)";
 
 p{
     margin: 0px;
@@ -9,6 +9,7 @@ p{
 
 a{
     text-decoration: none;
+    color: @color-primary;
 }
 
 .main-div {
@@ -29,6 +30,14 @@ a{
     width: 100%;
 }
 
+.contact-icons {
+    display: inline-block;
+    font-size: 1em;
+    .github-icon {
+        font-size: 1.6em;
+    }
+}
+
 .content-body {
     text-align: center;
     min-height: 100vh;
@@ -38,22 +47,34 @@ a{
     width: calc(~'100% - 230px');
     float: right;
     p{
-        margin-bottom: 10px;
+        //margin-bottom: 10px;
     }
 }
 
 .card-heading {
-    font-size: 2em;
+    font-size: 1.7em;
     color: @color-primary;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     display: inline-block;
     width: 100%;
+    //border-bottom: 1px solid #FF4081;
     .card-actions {
         float: right;
+        font-size: 0.7em;
+        color: @color-primary;
     }
     .card-timeDetails {
-        font-size: 0.5em;
+        font-size: 0.6em;
         color: grey;
+        margin-bottom: 10px;
+    }
+    &:after{
+        content: "";
+        height: 1px;
+        //background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(255,64,129,1) 50%,rgba(0,0,0,0) 100%);
+        background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(63,81,181,1) 50%,rgba(0,0,0,0) 100%);
+
+        display: block;
     }
 }
 
@@ -62,16 +83,37 @@ a{
     width: 100%;
 }
 
+.card-content-container {
+    width: calc(~'100% - 120px');
+    float: left;
+    font-size: 1.1em;
+    line-height: 1.8em;
+    &:last-child {
+        margin-bottom: 0px;
+    }
+}
+
+.card-without-pic {
+    width: 100%;
+}
+
+.card-pics-container {
+    display: inline-block;
+    width: 110px;
+    float: right;
+}
+
 .quote {
     display: inline-block;
+    text-align: center;
     width: 85%;
     margin: 20px;
     margin-bottom: 0px;
-    font-size: 2em;
+    font-size: 1.2em;
     color: grey;
-    font-family: 'Tangerine';
+    font-family: 'Linden Hill', serif;
     .author {
-        text-align: right;
+        margin-left: 50%;
     }
 
 }
@@ -80,11 +122,14 @@ a{
     background-color: @color-accent;
     color: white;
     border-radius: 10px;
-    padding: 4px 8px;
+    padding: 2px 4px;
 }
 
 @media @phone {
     .content-body {
         width: 100%;
+    }
+    .card-content-container {
+        line-height: 1.2em;
     }
 }

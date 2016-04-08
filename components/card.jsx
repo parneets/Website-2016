@@ -19,7 +19,7 @@ class CardPic extends React.Component {
             textAlign: 'center',
             display: 'inline-block',
             overflow: 'hidden',
-            marginRight: '10px'
+            margin: '5px'
         }
 
         let zDepth= this.state.isActive ? 5 : 1
@@ -55,8 +55,8 @@ class Card extends React.Component {
         };
         let zDepth= this.state.isActive ? 5 : 1
         return(
-            <div onMouseEnter={this.handleToggle} onMouseLeave={this.handleToggle}>
-                <Paper style={style} zDepth={zDepth}>
+            <div>
+                <Paper style={style} zDepth={zDepth} onMouseEnter={this.handleToggle} onMouseLeave={this.handleToggle}>
                     {this.props.children}
                 </Paper>
             </div>
