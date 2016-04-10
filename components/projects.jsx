@@ -15,6 +15,11 @@ import './../less/main.less'
 import './../less/projects.less'
 
 class Projects extends React.Component {
+
+    componentWillMount () {
+        window.scrollTo(0, 0);
+    }
+
     render() {
 
         const style = {
@@ -62,9 +67,9 @@ class Projects extends React.Component {
 
                             <p>Used Facebook's <a href="https://facebook.github.io/react/" target="_blank">React</a> framework for user interface and <a href="https://github.com/reactjs/react-router" target="_blank">react-router</a> library to manage the routing.</p>
 
-                            <p>Implemented using Google's <a href="https://facebook.github.io/react/" target="_blank">material design</a> pattern to produce a smooth user experience.</p>
+                            <p>Implemented using Google's <a href="https://www.google.com/design/spec/material-design/introduction.html" target="_blank">Material design</a> pattern to produce a smooth user experience.</p>
 
-                            <p>Written completely in <a href="http://www.ecma-international.org/ecma-262/6.0/" target="_blank">es6</a> along with <a href="https://facebook.github.io/react/docs/jsx-in-depth.html" target="_blank">jsx</a> and utilized <a href="https://babeljs.io/" target="_blank">Babel</a> for transpiling the code.</p>
+                            <p>Written completely in <a href="http://www.ecma-international.org/ecma-262/6.0/" target="_blank">es6</a> along with <a href="https://facebook.github.io/react/docs/jsx-in-depth.html" target="_blank">JSX</a> and utilized <a href="https://babeljs.io/" target="_blank">Babel</a> for transpiling the code.</p>
 
                             <p>Used <a href="https://webpack.github.io/" target="_blank">Webpack</a> for module bundling and <a href="https://www.npmjs.com/" target="_blank">npm</a> to get various packages and dependencies.</p>
 
@@ -79,40 +84,7 @@ class Projects extends React.Component {
                             <CardPic>
                                 <img src="./../pics/react.png" className="card-picture" />
                             </CardPic>
-                        </div>
 
-                    </Card>
-
-                    <Card>
-                        <div className="card-heading">Android Application
-                            <span className="card-actions">
-
-                                <IconButton style={actionIconStyle} onTouchTap={()=>{console.log('yo')}} tooltip="Source Code">
-                                    <i className="material-icons">folder_open</i>
-                                </IconButton>
-
-                            </span>
-                            <p className="card-timeDetails">Summer 2015</p>
-                        </div>
-
-                        <div className="card-content-container">
-                            <p>Created a Tic Tac Toe game for the <a href="https://www.android.com/" target="_blank">Android</a> platform.</p>
-
-                            <p>This project was mainly an effort to make myself familiar with the all the stages in the life of a mobile application. </p>
-
-                            <p>Published it on <a href="https://play.google.com/store/apps/details?id=me.parneetsingh.tictactoe" target="_blank">Play store</a> and received positive user feedback.</p>
-
-                            <p>Developed a compact game algorithm and simple design using the <a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller">MVC architecture</a>.</p>
-                        </div>
-
-                        <div className="card-pics-container">
-                            <CardPic>
-                                <img src="./../pics/android1.png" className="card-picture" />
-                            </CardPic>
-
-                            <CardPic>
-                                <img src="./../pics/android-logo.png" className="card-picture" />
-                            </CardPic>
                         </div>
 
                     </Card>
@@ -121,11 +93,11 @@ class Projects extends React.Component {
                         <div className="card-heading">Leaping Jack
                             <span className="card-actions">
 
-                                <IconButton style={actionIconStyle} onTouchTap={()=>{console.log('yo')}} tooltip="Play">
+                                <IconButton style={actionIconStyle} onTouchTap={()=>{window.open("leaping-jack.html")}} tooltip="Play">
                                     <i className="material-icons">play_circle_outline</i>
                                 </IconButton>
 
-                                <IconButton style={actionIconStyle} onTouchTap={()=>{console.log('yo')}} tooltip="Source Code">
+                                <IconButton style={actionIconStyle} onTouchTap={()=>{window.open("https://github.com/parneets/Personal-website-v1.0/blob/master/js/leaping-jack.js")}} tooltip="Source Code">
                                     <i className="material-icons">folder_open</i>
                                 </IconButton>
 
@@ -149,10 +121,44 @@ class Projects extends React.Component {
                     </Card>
 
                     <Card>
+                        <div className="card-heading">Android Application
+                            <span className="card-actions">
+
+                                <IconButton style={actionIconStyle} onTouchTap={()=>{ window.open("https://play.google.com/store/apps/details?id=me.parneetsingh.tictactoe")}} tooltip="Play store">
+                                    <i className="material-icons">local_grocery_store</i>
+                                </IconButton>
+
+                                <IconButton style={actionIconStyle} onTouchTap={()=>{window.open("https://github.com/parneets/Tic-Tac-Toe")}} tooltip="Source code">
+                                    <i className="material-icons">folder_open</i>
+                                </IconButton>
+
+                            </span>
+                            <p className="card-timeDetails">Summer 2015</p>
+                        </div>
+
+                        <div className="card-content-container">
+                            <p>Created a Tic Tac Toe game for the <a href="https://www.android.com/" target="_blank">Android</a> platform.</p>
+
+                            <p>This project was mainly an effort to make myself familiar with the all the stages in the life of a mobile application. </p>
+
+                            <p>Published it on <a href="https://play.google.com/store/apps/details?id=me.parneetsingh.tictactoe" target="_blank">Play store</a> and received positive user feedback.</p>
+
+                            <p>Developed a compact game algorithm and simple design using the <a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller">MVC architecture</a>.</p>
+                        </div>
+
+                        <div className="card-pics-container">
+                            <CardPic>
+                                <img src="./../pics/android1.png" className="card-picture" />
+                            </CardPic>
+                        </div>
+
+                    </Card>
+
+                    <Card>
                         <div className="card-heading">Personal Website v1.0
                             <span className="card-actions">
 
-                                <IconButton style={actionIconStyle} onTouchTap={()=>{console.log('yo')}} tooltip="Source Code">
+                                <IconButton style={actionIconStyle} onTouchTap={()=>{window.open("https://github.com/parneets/Personal-website-v1.0")}} tooltip="Source Code">
                                     <i className="material-icons">folder_open</i>
                                 </IconButton>
 
@@ -178,7 +184,7 @@ class Projects extends React.Component {
                         <div className="card-heading">Scribbler Bot
                             <span className="card-actions">
 
-                                <IconButton style={actionIconStyle} onTouchTap={()=>{console.log('yo')}} tooltip="Source Code">
+                                <IconButton style={actionIconStyle} onTouchTap={()=>{window.open("https://github.com/parneets/Scribbler-Bot")}} tooltip="Source Code">
                                     <i className="material-icons">folder_open</i>
                                 </IconButton>
 

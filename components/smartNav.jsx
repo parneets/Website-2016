@@ -100,12 +100,12 @@ class SmartNav extends React.Component {
                     iconElementRight={
                         <div className="contact-icons">
 
-                            <FloatingActionButton mini={true} style={iconStyle}>
+                            <FloatingActionButton mini={true} style={iconStyle} onTouchTap={()=>{window.location = "mailto:p69singh@uwaterloo.ca"}}>
                                 <i className="fa fa-envelope" />
                             </FloatingActionButton>
 
 
-                                <FloatingActionButton mini={true} style={githubIcon}>
+                                <FloatingActionButton mini={true} style={githubIcon} onTouchTap={()=>{window.open("https://github.com/parneets")}}>
                                     <i className="fa fa-github" />
                                 </FloatingActionButton>
 

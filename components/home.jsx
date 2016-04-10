@@ -5,6 +5,7 @@ import { Router, Route, IndexRoute, Link, hashHistory } from 'react-router';
 
 import RaisedButton from 'material-ui/lib/raised-button';
 import FlatButton from 'material-ui/lib/flat-button';
+import FloatingActionButton from 'material-ui/lib/floating-action-button';
 import LeftNav from 'material-ui/lib/left-nav';
 import MenuItem from 'material-ui/lib/menus/menu-item';
 import Paper from 'material-ui/lib/paper';
@@ -94,7 +95,7 @@ class Home extends React.Component {
                     <span className="home-heading">Parneet Singh</span>
                     <span className="home-quote">Converting caffiene into code since 2013</span>
 
-                    <RaisedButton label="Explore" primary={true} style={buttonStyle}
+                    <RaisedButton label="Explore" secondary={true} style={buttonStyle}
                             onTouchTap={this.handleToggle}/>
 
                     <Footer isHome={true} />

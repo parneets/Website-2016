@@ -10,6 +10,11 @@ import {Card, CardPic} from './card.jsx'
 import './../less/main.less'
 
 class Experience extends React.Component {
+
+    componentWillMount () {
+        window.scrollTo(0, 0);
+    }
+
     render() {
         return (
             <div className="expand-full">
@@ -31,15 +36,17 @@ class Experience extends React.Component {
                         </div>
 
                         <div className="card-content-container">
-                            <p>Created a Tic Tac Toe game for the Android platform.</p>
-                            <p>This project was mainly an effort to make myself familiar with the all the stages in the life of a mobile application. </p>
-                            <p>Published it on Play store and received positive user feedback.</p>
-                            <p>Developed a compact game algorithm and simple design.</p>
+                            <p>Independently designed and developed 3 different web applications over a period of 4 months.</p>
+                            <p>Used <a href="https://facebook.github.io/react/" target="_blank">React</a> with <a href="https://facebook.github.io/react/docs/jsx-in-depth.html" target="_blank">JSX</a> for the front end and <a href="http://redux.js.org/" target="_blank">Redux</a> as the design architecture.</p>
+                            <p>Fetched server data using <a href="http://www.evertz.com/">Evertz web api</a> accomplished by <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API" target="_blank">websocket</a> connections.</p>
+                            <p>Applications were based heavily on Google's <a href="https://www.google.com/design/spec/material-design/introduction.html" target="_blank">Material design</a> patterns and guidelines.</p>
+                            <p>Deployed finished apps using <a href="https://www.nginx.com/resources/wiki/" target="_blank">NGINX</a> to serve the content.</p>
+                            <p>Developed numerous reusable and easily instatiable React components for use by other team members.</p>
                         </div>
 
                         <div className="card-pics-container">
                             <CardPic>
-                                <img src="./../pics/material-design.png" className="card-picture" />
+                                <img src="./../pics/evertz.png" className="card-picture" />
                             </CardPic>
 
                             <CardPic>
@@ -50,52 +57,42 @@ class Experience extends React.Component {
                     </Card>
 
                     <Card>
-                        <div className="card-heading">Network Engineer
+                        <div className="card-heading">IT Administrator
                             <span className="card-actions">
                                 Mississauga,On ;&nbsp; May/15 - Aug/15
                             </span>
                             <p className="card-timeDetails">PRGX Canada Corporation</p>
                         </div>
                         <div className="card-content-container">
-                            <p>Created a Tic Tac Toe game for the Android platform.</p>
-                            <p>This project was mainly an effort to make myself familiar with the all the stages in the life of a mobile application. </p>
-                            <p>Published it on Play store and received positive user feedback.</p>
-                            <p>Developed a compact game algorithm and simple design.</p>
+                            <p>Maintained and installed company <a href="https://en.wikipedia.org/wiki/Server_(computing)" target="_blank">servers</a> and systems and configured <a href="https://en.wikipedia.org/wiki/Router_(computing)" target="_blank">network routers</a>.</p>
+                            <p>Provided technical support for computer and <a href="https://en.wikipedia.org/wiki/Local_area_network" target="_blank">LAN</a> related issues.</p>
+                            <p>Developed a document viewing system using <a href="https://en.wikipedia.org/wiki/SQL" target="_blank">SQL</a> and <a href="https://en.wikipedia.org/wiki/Visual_Basic" target="_blank">visual basic</a>.</p>
                         </div>
 
                         <div className="card-pics-container">
                             <CardPic>
-                                <img src="./../pics/material-design.png" className="card-picture" />
-                            </CardPic>
-
-                            <CardPic>
-                                <img src="./../pics/react.png" className="card-picture" />
+                                <img src="./../pics/prgx.png" className="card-picture" />
                             </CardPic>
                         </div>
 
                     </Card>
 
                     <Card>
-                        <div className="card-heading">IT Specialist
+                        <div className="card-heading">IT Support Specialist
                             <span className="card-actions">
                                 Chandigarh,India ;&nbsp; Jan/14 - Aug/14
                             </span>
                             <p className="card-timeDetails">Dominant Marketing Agencies</p>
                         </div>
                         <div className="card-content-container">
-                            <p>Created a Tic Tac Toe game for the Android platform.</p>
-                            <p>This project was mainly an effort to make myself familiar with the all the stages in the life of a mobile application. </p>
-                            <p>Published it on Play store and received positive user feedback.</p>
-                            <p>Developed a compact game algorithm and simple design.</p>
+                            <p>Installed, configured and tested hardware and software.</p>
+                            <p>Responded to phone and e-mail requests for technical support.</p>
+                            <p>Performed preventive maintenance.</p>
                         </div>
 
                         <div className="card-pics-container">
                             <CardPic>
-                                <img src="./../pics/material-design.png" className="card-picture" />
-                            </CardPic>
-
-                            <CardPic>
-                                <img src="./../pics/react.png" className="card-picture" />
+                                <img src="./../pics/itSupport.png" className="card-picture" />
                             </CardPic>
                         </div>
 

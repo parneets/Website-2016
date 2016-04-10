@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Leaping Jack</title>
+	<style type="text/css">
+	   * { margin: 0px; padding: 0px; }
+	   #swingbot { border: 3px solid rgb(0, 0, 0); }
+	</style>
+</head>
+<body>
+	<canvas id="swingbot"></canvas>
+	<script id="myScript "src="js/leaping-jack.js"></script>
+
+	<script>
+		window.onload = function () {      <!-- On window load --> 
+			var bot = new leapingjack();      
+			bot.init();                     <!-- to initialize the bot -->
+		}
+	</script>
+</body>
+</html>

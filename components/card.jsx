@@ -14,8 +14,8 @@ class CardPic extends React.Component {
 
     render() {
         const imgStyle = {
-            height: 100,
-            width: 100,
+            height: 120,
+            width: 120,
             textAlign: 'center',
             display: 'inline-block',
             overflow: 'hidden',
@@ -48,7 +48,7 @@ class Card extends React.Component {
         const style = {
             minHeight: 100,
             width: '85%',
-            margin: '20',
+            marginBottom: '40',
             textAlign: 'left',
             display: 'inline-block',
             padding: '10px',
