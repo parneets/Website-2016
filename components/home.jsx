@@ -35,12 +35,16 @@ class Home extends React.Component {
 
         const buttonStyle = {
             position: 'absolute',
-            width: '50px',
+            width: '56px',
             top: '65%',
             left: '0px',
             right: '0px',
             margin: '0 auto',
         };
+
+        const iconStyle = {
+            fontSize: '1.5em'
+        }
 
         const menuStyle = {
             textAlign: 'center',
@@ -95,8 +99,10 @@ class Home extends React.Component {
                     <span className="home-heading">Parneet Singh</span>
                     <span className="home-quote">Converting caffiene into code since 2013</span>
 
-                    <RaisedButton label="Explore" secondary={true} style={buttonStyle}
-                            onTouchTap={this.handleToggle}/>
+
+                    <FloatingActionButton style={buttonStyle} onTouchTap={this.handleToggle} iconStyle={iconStyle}>
+                        <i className="material-icons">power_settings_new</i>
+                    </FloatingActionButton>
 
                     <Footer isHome={true} />
 

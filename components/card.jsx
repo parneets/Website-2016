@@ -10,7 +10,8 @@ class CardPic extends React.Component {
         this.state = {isActive: false};
     }
 
-    handleToggle = () => this.setState({isActive: !this.state.isActive});
+    handleOpen = () => this.setState({isActive: true});
+    handleClose = () => this.setState({isActive: false});
 
     render() {
         const imgStyle = {
@@ -22,11 +23,11 @@ class CardPic extends React.Component {
             margin: '5px'
         }
 
-        let zDepth= this.state.isActive ? 5 : 1
+        let zDepth= this.state.isActive ? 3 : 1
         return(
             <div style={{display: 'inline-block'}}
-                    onMouseEnter={this.handleToggle}
-                    onMouseLeave={this.handleToggle}>
+                    onMouseEnter={this.handleOpen}
+                    onMouseLeave={this.handleClose}>
                 <Paper style={imgStyle} zDepth={zDepth}>
                     {this.props.children}
                 </Paper>
@@ -42,7 +43,8 @@ class Card extends React.Component {
         this.state = {isActive: false};
     }
 
-    handleToggle = () => this.setState({isActive: !this.state.isActive});
+    handleOpen = () => this.setState({isActive: true});
+    handleClose = () => this.setState({isActive: false});
 
     render() {
         const style = {
@@ -53,10 +55,10 @@ class Card extends React.Component {
             display: 'inline-block',
             padding: '10px',
         };
-        let zDepth= this.state.isActive ? 5 : 1
+        let zDepth= this.state.isActive ? 3 : 1
         return(
             <div>
-                <Paper style={style} zDepth={zDepth} onMouseEnter={this.handleToggle} onMouseLeave={this.handleToggle}>
+                <Paper style={style} zDepth={zDepth} onMouseEnter={this.handleOpen} onMouseLeave={this.handleClose}>
                     {this.props.children}
                 </Paper>
             </div>

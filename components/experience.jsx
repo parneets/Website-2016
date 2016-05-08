@@ -18,12 +18,12 @@ class Experience extends React.Component {
     render() {
         return (
             <div className="expand-full">
-                <SmartNav name="About Me"/>
+                <SmartNav name="Experience"/>
 
                 <div className="content-body">
 
                     <div className="quote">
-                        <p>I could either watch it happen, or be part of it.</p>
+                        <p>I could either watch it happen, or be a part of it.</p>
                         <p className="author">- Elon Musk</p>
                     </div>
 

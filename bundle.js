@@ -42502,8 +42502,12 @@
 
 	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(CardPic).call(this, props));
 
-	        _this.handleToggle = function () {
-	            return _this.setState({ isActive: !_this.state.isActive });
+	        _this.handleOpen = function () {
+	            return _this.setState({ isActive: true });
+	        };
+
+	        _this.handleClose = function () {
+	            return _this.setState({ isActive: false });
 	        };
 
 	        _this.state = { isActive: false };
@@ -42522,12 +42526,12 @@
 	                margin: '5px'
 	            };
 
-	            var zDepth = this.state.isActive ? 5 : 1;
+	            var zDepth = this.state.isActive ? 3 : 1;
 	            return _react2.default.createElement(
 	                'div',
 	                { style: { display: 'inline-block' },
-	                    onMouseEnter: this.handleToggle,
-	                    onMouseLeave: this.handleToggle },
+	                    onMouseEnter: this.handleOpen,
+	                    onMouseLeave: this.handleClose },
 	                _react2.default.createElement(
 	                    _paper2.default,
 	                    { style: imgStyle, zDepth: zDepth },
@@ -42548,8 +42552,12 @@
 
 	        var _this2 = _possibleConstructorReturn(this, Object.getPrototypeOf(Card).call(this, props));
 
-	        _this2.handleToggle = function () {
-	            return _this2.setState({ isActive: !_this2.state.isActive });
+	        _this2.handleOpen = function () {
+	            return _this2.setState({ isActive: true });
+	        };
+
+	        _this2.handleClose = function () {
+	            return _this2.setState({ isActive: false });
 	        };
 
 	        _this2.state = { isActive: false };
@@ -42567,13 +42575,13 @@
 	                display: 'inline-block',
 	                padding: '10px'
 	            };
-	            var zDepth = this.state.isActive ? 5 : 1;
+	            var zDepth = this.state.isActive ? 3 : 1;
 	            return _react2.default.createElement(
 	                'div',
 	                null,
 	                _react2.default.createElement(
 	                    _paper2.default,
-	                    { style: style, zDepth: zDepth, onMouseEnter: this.handleToggle, onMouseLeave: this.handleToggle },
+	                    { style: style, zDepth: zDepth, onMouseEnter: this.handleOpen, onMouseLeave: this.handleClose },
 	                    this.props.children
 	                )
 	            );
@@ -42886,7 +42894,7 @@
 	                                _react2.default.createElement(
 	                                    _iconButton2.default,
 	                                    { style: actionIconStyle, onTouchTap: function onTouchTap() {
-	                                            window.open("https://github.com/parneets/Personal-website-v1.0/blob/master/js/leaping-jack.js");
+	                                            window.open("https://github.com/parneets/Personal-website-v1.0/blob/master/leaping-jack.html");
 	                                        }, tooltip: 'Source Code' },
 	                                    _react2.default.createElement(
 	                                        'i',

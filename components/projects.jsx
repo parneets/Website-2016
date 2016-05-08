@@ -54,7 +54,8 @@ class Projects extends React.Component {
                         <div className="card-heading">Personal Website v2.0
                             <span className="card-actions">
 
-                                <IconButton style={actionIconStyle} onTouchTap={()=>{console.log('yo')}} tooltip="Source Code">
+
+                                <IconButton style={actionIconStyle} onTouchTap={()=>{window.open("https://github.com/parneets/Website-2016")}} tooltip="Source Code">
                                     <i className="material-icons">folder_open</i>
                                 </IconButton>
 
@@ -97,7 +98,7 @@ class Projects extends React.Component {
                                     <i className="material-icons">play_circle_outline</i>
                                 </IconButton>
 
-                                <IconButton style={actionIconStyle} onTouchTap={()=>{window.open("https://github.com/parneets/Personal-website-v1.0/blob/master/js/leaping-jack.js")}} tooltip="Source Code">
+                                <IconButton style={actionIconStyle} onTouchTap={()=>{window.open("https://github.com/parneets/Personal-website-v1.0/blob/master/leaping-jack.html")}} tooltip="Source Code">
                                     <i className="material-icons">folder_open</i>
                                 </IconButton>
 
