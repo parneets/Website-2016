@@ -29990,11 +29990,15 @@
 
 	            var buttonStyle = {
 	                position: 'absolute',
-	                width: '50px',
+	                width: '56px',
 	                top: '65%',
 	                left: '0px',
 	                right: '0px',
 	                margin: '0 auto'
+	            };
+
+	            var iconStyle = {
+	                fontSize: '1.5em'
 	            };
 
 	            var menuStyle = {
@@ -30028,7 +30032,7 @@
 	                    _react2.default.createElement(
 	                        _paper2.default,
 	                        { style: picStyle, zDepth: 2, circle: true },
-	                        _react2.default.createElement('img', { className: 'nav-pic', src: './../pics/parneet1.jpg' })
+	                        _react2.default.createElement('img', { className: 'nav-pic', src: './../pics/parneet3.jpg' })
 	                    ),
 	                    _react2.default.createElement(_divider2.default, null),
 	                    _react2.default.createElement(
@@ -30081,8 +30085,7 @@
 	                    { className: 'home-quote' },
 	                    'Converting caffiene into code since 2013'
 	                ),
-	                _react2.default.createElement(_raisedButton2.default, { label: 'Explore', secondary: true, style: buttonStyle,
-	                    onTouchTap: this.handleToggle }),
+	                _react2.default.createElement(_raisedButton2.default, { style: buttonStyle, label: 'Explore', primary: true, onTouchTap: this.handleToggle }),
 	                _react2.default.createElement(_footer.Footer, { isHome: true })
 	            );
 	        }
@@ -41999,7 +42002,7 @@
 	                    _react2.default.createElement(
 	                        _paper2.default,
 	                        { style: picStyle, zDepth: 2, circle: true },
-	                        _react2.default.createElement('img', { className: 'nav-pic', src: './../pics/parneet1.jpg' })
+	                        _react2.default.createElement('img', { className: 'nav-pic', src: './../pics/parneet3.jpg' })
 	                    ),
 	                    _react2.default.createElement(_divider2.default, null),
 	                    _react2.default.createElement(
@@ -42751,6 +42754,68 @@
 	                        _react2.default.createElement(
 	                            'div',
 	                            { className: 'card-heading' },
+	                            'Rideshare (Hybrid Mobile Application)',
+	                            _react2.default.createElement(
+	                                'span',
+	                                { className: 'card-actions' },
+	                                _react2.default.createElement(
+	                                    _iconButton2.default,
+	                                    { style: actionIconStyle, onTouchTap: function onTouchTap() {
+	                                            window.open("https://github.com/parneets/Rideshare-App");
+	                                        }, tooltip: 'Source Code' },
+	                                    _react2.default.createElement(
+	                                        'i',
+	                                        { className: 'material-icons' },
+	                                        'folder_open'
+	                                    )
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                'p',
+	                                { className: 'card-timeDetails' },
+	                                'Fall 2016'
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'card-content-container' },
+	                            _react2.default.createElement(
+	                                'p',
+	                                null,
+	                                'Created a ride sharing mobile application for iOS and Android using Ionic 2.'
+	                            ),
+	                            _react2.default.createElement(
+	                                'p',
+	                                null,
+	                                'Inspired by uberPOOL, the app allows users to post and search rides.'
+	                            ),
+	                            _react2.default.createElement(
+	                                'p',
+	                                null,
+	                                'Integrated Google Places API for convenient location search.'
+	                            ),
+	                            _react2.default.createElement(
+	                                'p',
+	                                null,
+	                                'Developed the backend using Express for routes and MongoDB for the database.'
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'card-pics-container' },
+	                            _react2.default.createElement(
+	                                _card.CardPic,
+	                                null,
+	                                _react2.default.createElement('img', { src: './../pics/ionic.png', className: 'card-picture' })
+	                            )
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        _card.Card,
+	                        null,
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'card-heading' },
 	                            'Personal Website v2.0',
 	                            _react2.default.createElement(
 	                                'span',
@@ -42758,7 +42823,7 @@
 	                                _react2.default.createElement(
 	                                    _iconButton2.default,
 	                                    { style: actionIconStyle, onTouchTap: function onTouchTap() {
-	                                            console.log('yo');
+	                                            window.open("https://github.com/parneets/Website-2016");
 	                                        }, tooltip: 'Source Code' },
 	                                    _react2.default.createElement(
 	                                        'i',
@@ -42812,57 +42877,12 @@
 	                            _react2.default.createElement(
 	                                'p',
 	                                null,
-	                                'Written completely in ',
-	                                _react2.default.createElement(
-	                                    'a',
-	                                    { href: 'http://www.ecma-international.org/ecma-262/6.0/', target: '_blank' },
-	                                    'es6'
-	                                ),
-	                                ' along with ',
-	                                _react2.default.createElement(
-	                                    'a',
-	                                    { href: 'https://facebook.github.io/react/docs/jsx-in-depth.html', target: '_blank' },
-	                                    'JSX'
-	                                ),
-	                                ' and utilized ',
-	                                _react2.default.createElement(
-	                                    'a',
-	                                    { href: 'https://babeljs.io/', target: '_blank' },
-	                                    'Babel'
-	                                ),
-	                                ' for transpiling the code.'
-	                            ),
-	                            _react2.default.createElement(
-	                                'p',
-	                                null,
-	                                'Used ',
-	                                _react2.default.createElement(
-	                                    'a',
-	                                    { href: 'https://webpack.github.io/', target: '_blank' },
-	                                    'Webpack'
-	                                ),
-	                                ' for module bundling and ',
-	                                _react2.default.createElement(
-	                                    'a',
-	                                    { href: 'https://www.npmjs.com/', target: '_blank' },
-	                                    'npm'
-	                                ),
-	                                ' to get various packages and dependencies.'
-	                            ),
-	                            _react2.default.createElement(
-	                                'p',
-	                                null,
 	                                'The website is fully responsive and dynamic.'
 	                            )
 	                        ),
 	                        _react2.default.createElement(
 	                            'div',
 	                            { className: 'card-pics-container' },
-	                            _react2.default.createElement(
-	                                _card.CardPic,
-	                                null,
-	                                _react2.default.createElement('img', { src: './../pics/material-design.png', className: 'card-picture' })
-	                            ),
 	                            _react2.default.createElement(
 	                                _card.CardPic,
 	                                null,
@@ -43302,7 +43322,7 @@
 	            return _react2.default.createElement(
 	                'div',
 	                { className: 'expand-full' },
-	                _react2.default.createElement(_smartNav.SmartNav, { name: 'About Me' }),
+	                _react2.default.createElement(_smartNav.SmartNav, { name: 'Experience' }),
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'content-body' },
@@ -43312,12 +43332,74 @@
 	                        _react2.default.createElement(
 	                            'p',
 	                            null,
-	                            'I could either watch it happen, or be part of it.'
+	                            'I could either watch it happen, or be a part of it.'
 	                        ),
 	                        _react2.default.createElement(
 	                            'p',
 	                            { className: 'author' },
 	                            '- Elon Musk'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        _card.Card,
+	                        null,
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'card-heading' },
+	                            'Software Developer',
+	                            _react2.default.createElement(
+	                                'span',
+	                                { className: 'card-actions' },
+	                                'Mississauga,On ;  Sept/16 - Dec/16'
+	                            ),
+	                            _react2.default.createElement(
+	                                'p',
+	                                { className: 'card-timeDetails' },
+	                                'D+H Limited Partnership'
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'card-content-container' },
+	                            _react2.default.createElement(
+	                                'p',
+	                                null,
+	                                'Created a mobile application from scratch using Ionic 2 for iOS and Android platforms.'
+	                            ),
+	                            _react2.default.createElement(
+	                                'p',
+	                                null,
+	                                'The mobile application allowed users to take tests , view results and reports , publish tests and even edit profile.'
+	                            ),
+	                            _react2.default.createElement(
+	                                'p',
+	                                null,
+	                                'Implemented multiple user roles, authentication, push notifications and native features.'
+	                            ),
+	                            _react2.default.createElement(
+	                                'p',
+	                                null,
+	                                'Developed automated end to end tests using Protractor and integrated with build pipeline.'
+	                            ),
+	                            _react2.default.createElement(
+	                                'p',
+	                                null,
+	                                'Inspection time after every build was reduced from 1 hour to15 minutes on average.'
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'card-pics-container' },
+	                            _react2.default.createElement(
+	                                _card.CardPic,
+	                                null,
+	                                _react2.default.createElement('img', { src: './../pics/dh.png', className: 'card-picture' })
+	                            ),
+	                            _react2.default.createElement(
+	                                _card.CardPic,
+	                                null,
+	                                _react2.default.createElement('img', { src: './../pics/ionic.png', className: 'card-picture' })
+	                            )
 	                        )
 	                    ),
 	                    _react2.default.createElement(

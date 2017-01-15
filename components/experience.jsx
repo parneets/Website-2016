@@ -28,6 +28,34 @@ class Experience extends React.Component {
                     </div>
 
                     <Card>
+                        <div className="card-heading">Software Developer
+                            <span className="card-actions">
+                                Mississauga,On ;&nbsp; Sept/16 - Dec/16
+                            </span>
+                            <p className="card-timeDetails">D+H Limited Partnership</p>
+                        </div>
+
+                        <div className="card-content-container">
+                            <p>Created a mobile application from scratch using Ionic 2 for iOS and Android platforms.</p>
+                            <p>The mobile application allowed users to take tests , view results and reports , publish tests and even edit profile.</p>
+                            <p>Implemented multiple user roles, authentication, push notifications and native features.</p>
+                            <p>Developed automated end to end tests using Protractor and integrated with build pipeline.</p>
+                            <p>Inspection time after every build was reduced from 1 hour to15 minutes on average.</p>
+                        </div>
+
+                        <div className="card-pics-container">
+                            <CardPic>
+                                <img src="./../pics/dh.png" className="card-picture" />
+                            </CardPic>
+
+                            <CardPic>
+                                <img src="./../pics/ionic.png" className="card-picture" />
+                            </CardPic>
+                        </div>
+
+                    </Card>
+
+                    <Card>
                         <div className="card-heading">Web Applications Developer
                             <span className="card-actions">
                                 Burlington,On ;&nbsp; Jan/16 - Apr/16

@@ -51,6 +51,33 @@ class Projects extends React.Component {
                     </div>
 
                     <Card>
+                        <div className="card-heading">Rideshare (Hybrid Mobile Application)
+                            <span className="card-actions">
+
+                                <IconButton style={actionIconStyle} onTouchTap={()=>{window.open("https://github.com/parneets/Rideshare-App")}} tooltip="Source Code">
+                                    <i className="material-icons">folder_open</i>
+                                </IconButton>
+
+                            </span>
+                            <p className="card-timeDetails">Fall 2016</p>
+                        </div>
+
+                        <div className="card-content-container">
+                             <p>Created a ride sharing mobile application for iOS and Android using Ionic 2.</p> 
+                            <p>Inspired by uberPOOL, the app allows users to post and search rides.</p>
+                            <p>Integrated Google Places API for convenient location search.</p>
+                            <p>Developed the backend using Express for routes and MongoDB for the database.</p>
+                        </div>
+
+                        <div className="card-pics-container">
+                            <CardPic>
+                                <img src="./../pics/ionic.png" className="card-picture" />
+                            </CardPic>
+                        </div>
+
+                    </Card>
+
+                    <Card>
                         <div className="card-heading">Personal Website v2.0
                             <span className="card-actions">
 
@@ -70,17 +97,10 @@ class Projects extends React.Component {
 
                             <p>Implemented using Google's <a href="https://www.google.com/design/spec/material-design/introduction.html" target="_blank">Material design</a> pattern to produce a smooth user experience.</p>
 
-                            <p>Written completely in <a href="http://www.ecma-international.org/ecma-262/6.0/" target="_blank">es6</a> along with <a href="https://facebook.github.io/react/docs/jsx-in-depth.html" target="_blank">JSX</a> and utilized <a href="https://babeljs.io/" target="_blank">Babel</a> for transpiling the code.</p>
-
-                            <p>Used <a href="https://webpack.github.io/" target="_blank">Webpack</a> for module bundling and <a href="https://www.npmjs.com/" target="_blank">npm</a> to get various packages and dependencies.</p>
-
                             <p>The website is fully responsive and dynamic.</p>
                         </div>
 
                         <div className="card-pics-container">
-                            <CardPic>
-                                <img src="./../pics/material-design.png" className="card-picture" />
-                            </CardPic>
 
                             <CardPic>
                                 <img src="./../pics/react.png" className="card-picture" />

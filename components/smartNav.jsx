@@ -123,7 +123,7 @@ class SmartNav extends React.Component {
                 >
 
                     <Paper style={picStyle} zDepth={2} circle={true}>
-                        <img className="nav-pic" src="./../pics/parneet1.jpg" />
+                        <img className="nav-pic" src="./../pics/parneet3.jpg" />
                     </Paper>
 
                     <Divider />

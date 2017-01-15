@@ -72,7 +72,7 @@ class Home extends React.Component {
                     >
 
                         <Paper style={picStyle} zDepth={2} circle={true}>
-                            <img className="nav-pic" src="./../pics/parneet1.jpg" />
+                            <img className="nav-pic" src="./../pics/parneet3.jpg" />
                         </Paper>
 
                         <Divider />
@@ -99,10 +99,7 @@ class Home extends React.Component {
                     <span className="home-heading">Parneet Singh</span>
                     <span className="home-quote">Converting caffiene into code since 2013</span>
 
-
-                    <FloatingActionButton style={buttonStyle} onTouchTap={this.handleToggle} iconStyle={iconStyle}>
-                        <i className="material-icons">power_settings_new</i>
-                    </FloatingActionButton>
+                    <RaisedButton style={buttonStyle} label="Explore" primary={true} onTouchTap={this.handleToggle}/>
 
                     <Footer isHome={true} />
 
